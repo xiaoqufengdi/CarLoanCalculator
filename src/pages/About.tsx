@@ -1,23 +1,7 @@
-import React from 'react';
-import { Card, Typography, Divider, List, Avatar, Row, Col } from 'antd';
-import { 
-  faInfoCircle, 
-  faHistory, 
-  faCheckCircle, 
-  faCalculator,
-  faLineChart,
-  faFileExcel,
-  faCode,
-  faHeart,
-  faArrowLeft,
-  faCar,
-  faDollarSign,
-  faCalendarAlt,
-  faPercent
-} from 'font-awesome';
+import { Card, Typography, Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 export default function About() {
   const features = [
