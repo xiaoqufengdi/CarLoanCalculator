@@ -129,7 +129,7 @@ export default function About() {
         </Card>
 
         {/* 功能特性 */}
-        <Card className="mb-8 shadow-md rounded-xl overflow-hidden">
+       {/* <Card className="mb-8 shadow-md rounded-xl overflow-hidden">
           <Title level={2} className="flex items-center text-xl font-semibold text-slate-800 dark:text-white">
             <i className="fa fa-check-circle mr-2 text-green-500"></i> 功能特性
           </Title>
@@ -155,7 +155,7 @@ export default function About() {
             ))}
           </Row>
         </Card>
-
+*/}
 
 
         <FriendLinks />
