@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { 
-  Form, 
-  InputNumber, 
-  Select, 
-  Table, 
-  Button, 
-  Row, 
-  Col, 
-  Card, 
-  Statistic, 
-  Divider, 
-  message 
+import { useState } from 'react';
+import {
+    Form,
+    InputNumber,
+    Select,
+    Table,
+    Button,
+    Row,
+    Col,
+    Card,
+    Statistic,
+    Divider,
+    message, TableColumnType
 } from 'antd';
 
 import * as XLSX from 'xlsx';
@@ -84,7 +84,7 @@ export default function CarLoanCalculator() {
   };
   
   // 表格列定义
-  const columns = [
+  const columns: TableColumnType<any>[] = [
     {
       title: '期数',
       dataIndex: 'period',
