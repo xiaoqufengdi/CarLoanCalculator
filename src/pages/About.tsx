@@ -5,23 +5,23 @@ import FriendLinks from '../components/FriendLinks';
 const { Title, Paragraph } = Typography;
 
 export default function About() {
-  const features = [
-    {
-      title: '精确计算',
-      icon: <i className="fa fa-calculator text-blue-500" />,
-      description: '支持等额本金和等额本息两种计算方式，提供精确的还款计划'
-    },
-    {
-      title: '数据可视化',
-      icon: <i className="fa fa-line-chart text-green-500" />,
-      description: '通过直观的图表展示还款趋势和贷款构成比例'
-    },
-    {
-      title: 'Excel导出',
-      icon: <i className="fa fa-file-excel text-yellow-500" />,
-      description: '支持将详细的还款计划表导出为Excel文件，便于存档和分析'
-    }
-  ];
+  // const features = [
+  //   {
+  //     title: '精确计算',
+  //     icon: <i className="fa fa-calculator text-blue-500" />,
+  //     description: '支持等额本金和等额本息两种计算方式，提供精确的还款计划'
+  //   },
+  //   {
+  //     title: '数据可视化',
+  //     icon: <i className="fa fa-line-chart text-green-500" />,
+  //     description: '通过直观的图表展示还款趋势和贷款构成比例'
+  //   },
+  //   {
+  //     title: 'Excel导出',
+  //     icon: <i className="fa fa-file-excel text-yellow-500" />,
+  //     description: '支持将详细的还款计划表导出为Excel文件，便于存档和分析'
+  //   }
+  // ];
 
   // 车贷相关说明内容
   const carLoanExplanations = [
