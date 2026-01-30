@@ -12,12 +12,7 @@ import {
   Divider, 
   message 
 } from 'antd';
-import { 
-  faDownload, 
-  faArrowLeft, 
-  faCalculator,
-  faHome
-} from 'font-awesome';
+
 import * as XLSX from 'xlsx';
 import { Link } from 'react-router-dom';
 
