@@ -228,7 +228,7 @@ export default function CarLoanCalculator() {
               <Col span={24} className="flex justify-center mt-4">
                   <small>
                       单利息模式下，年利率 = 月利率 × 12
-                        &nbsp;&nbsp; | &nbsp;&nbsp;
+                      <br/>
                   复利模式下 年化利率 ≈ 月费率 × 12 × 1.85
                   </small>
               </Col>
