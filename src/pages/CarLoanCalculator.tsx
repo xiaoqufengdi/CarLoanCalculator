@@ -23,6 +23,7 @@ import { Link } from 'react-router-dom';
 
 import { useCarLoanCalculator } from '../hooks/useCarLoanCalculator';
 import { CarLoanChart } from '../components/CarLoanChart';
+import FriendLinks from '../components/FriendLinks';
 
 const { Option } = Select;
 
@@ -133,7 +134,7 @@ export default function CarLoanCalculator() {
   );
   
    return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 md:p-8 pb-24">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 md:pb-24 pb-24">
       {/* 标题 */}
        <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400 flex items-center justify-center">
@@ -161,7 +162,7 @@ export default function CarLoanCalculator() {
             className="p-4"
           >
              <Row gutter={16}>
-                <Col xs={24} sm={12} md={8}>
+                <Col xs={24} sm={12} md={12}>
                   <Form.Item
                     label="贷款金额(元)"
                     name="loanAmount"
@@ -175,7 +176,7 @@ export default function CarLoanCalculator() {
                     />
                   </Form.Item>
                 </Col>
-                <Col xs={24} sm={12} md={8}>
+                <Col xs={24} sm={12} md={12}>
                   <Form.Item
                     label="贷款期限(月)"
                     name="loanTerm"
@@ -188,7 +189,7 @@ export default function CarLoanCalculator() {
                     </Select>
                   </Form.Item>
                 </Col>
-                <Col xs={24} sm={12} md={8}>
+                <Col xs={24} sm={12} md={12}>
                   <Form.Item
                     label="年利率(%)"
                     name="annualRate"
@@ -203,7 +204,7 @@ export default function CarLoanCalculator() {
                     />
                   </Form.Item>
                 </Col>
-                <Col xs={24} sm={12} md={8}>
+                <Col xs={24} sm={12} md={12}>
                   <Form.Item
                     label="还款方式"
                     name="paymentType"
@@ -319,12 +320,14 @@ export default function CarLoanCalculator() {
       scroll={{ x: "max-content" }}
           />
      </div>
-     
+
+      <FriendLinks />
+
       {/* 底部导航 */}
       <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-800 shadow-lg py-3 px-6 border-t border-slate-200 dark:border-slate-700 z-10 overflow-hidden">
         <div className="max-w-6xl mx-auto flex justify-center">
-           <Link 
-             to="/about" 
+           <Link
+             to="/about"
              className="flex items-center justify-center bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-800/30 transition-colors duration-200 py-2 px-6 rounded-full text-blue-600 dark:text-blue-400"
            >
              <i className="fa fa-info-circle mr-2"></i>
@@ -333,6 +336,6 @@ export default function CarLoanCalculator() {
         </div>
       </div>
   </div>
-    </div>
+  </div>
   );
 }

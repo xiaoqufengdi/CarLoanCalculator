@@ -1,5 +1,6 @@
 import { Card, Typography, Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
+import FriendLinks from '../components/FriendLinks';
 
 const { Title, Paragraph } = Typography;
 
@@ -24,6 +25,21 @@ export default function About() {
 
   // 车贷相关说明内容
   const carLoanExplanations = [
+      {
+          title: '最新车贷利率政策',
+          icon: <i className="fa fa-bank text-indigo-500" />,
+          description: '当前车贷市场利率普遍在3.5%-8%之间，不同银行和金融机构根据借款人信用状况、首付比例等因素制定差异化利率。央行LPR调整对车贷利率也有直接影响，建议关注每月20日公布的LPR数据。'
+      },
+      {
+          title: '影响车贷利率的因素',
+          icon: <i className="fa fa-pie-chart text-teal-500" />,
+          description: '车贷利率受多种因素影响：个人征信记录、首付比例、贷款期限、车辆品牌及价格、银行政策等。一般而言，征信良好、首付比例高、贷款期限短的客户可以获得更低的利率优惠。'
+      },
+      {
+          title: '车贷利息计算公式',
+          icon: <i className="fa fa-calculator text-orange-500" />,
+          description: '月还款额 = [贷款本金 × 月利率 × (1+月利率)^还款月数] ÷ [(1+月利率)^还款月数 - 1]。其中月利率 = 年利率 ÷ 12。本计算器采用此标准公式，确保计算结果的准确性。'
+      },
     {
       title: '什么是等额本息？',
       icon: <i className="fa fa-car text-blue-500" />,
@@ -142,6 +158,8 @@ export default function About() {
 
 
 
+        <FriendLinks />
+
         {/* 页脚信息 */}
         <div className="text-center text-slate-500 dark:text-slate-400 p-4">
           <p className="flex items-center justify-center">
@@ -151,6 +169,11 @@ export default function About() {
           <p className="mt-2">
             © {new Date().getFullYear()} 版权所有
           </p>
+          <div>
+              <small>
+                  本计算器计算结果仅供参考，实际贷款情况以银行计算结果为准。
+              </small>
+          </div>
         </div>
       </div>
     </div>
